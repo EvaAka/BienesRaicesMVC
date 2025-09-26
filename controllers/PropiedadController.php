@@ -1,8 +1,19 @@
 <?php
 namespace Controllers;
+use MVC\Router;
 
 class PropiedadController {
-    public function index() {
-        
+    public static function index(Router $router) {
+        $router->render('propiedades/admin');
+    }
+
+     public static function crear() {
+        $router->render('propiedades/actualizar');
+    }
+
+    public static function actualizar() {
+        echo "Actualizar Propiedad";
     }
 }
+
+    

@@ -7,8 +7,8 @@ use Controllers\PropiedadController;
 
 $router = new Router();
 
-$router->get('/admin', 'funcion_nosotros');
-$router->get('/propiedades/crear', 'funcion_nosotros');
-$router->get('/propiedades/actualizar', 'funcion_nosotros');
+$router->get('/admin', [PropiedadController::class, 'index']); //index es la funcion que hay en PropiedadController
+$router->get('/propiedades/crear', [PropiedadController::class, 'crear']);
+$router->get('/propiedades/actualizar', [PropiedadController::class, 'actualizar']);
 
 $router->comprobarRutas();
