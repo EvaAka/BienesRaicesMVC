@@ -1,0 +1,21 @@
+{
+    "name": "eva/bienesraices_inicio",
+    "description": "Creando un proyecto con POO",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./models",
+            "MVC\\": "./",
+            "Controllers\\": "./controllers"
+        }
+    },
+    "authors": [
+        {
+            "name": "EvaAka",
+            "email": "evamgalanr@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "3.9.0"
+    }
+}
